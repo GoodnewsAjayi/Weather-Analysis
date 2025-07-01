@@ -24,9 +24,6 @@ It includes features such as:
 
 
 
-
-
-
  🔍 Key Explorations
 The analysis covers:
 •	Viewing dataset structure: `.head()`, `.shape`, `.columns`, `.dtypes`
