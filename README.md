@@ -1,4 +1,51 @@
-# Weather-Analysis
+ Weather-Analysis
+ Weather Data Analysis Project 🌤️
+
+This project provides a basic exploratory data analysis (EDA) of historical weather data using Python and pandas. It aims to uncover key insights such as unique weather conditions, average wind speeds, visibility trends, and conditions during specific weather events like snow or fog.
+
+ 📂 Dataset
+The dataset used in this project is a CSV file:
+`Weather Project dataset.csv`
+It includes features such as:
+
+ Temperature (°C)
+ Dew Point Temp (°C)
+ Rel Hum (%)
+ Wind Speed (km/h)
+ Visibility (km)
+ Press (kPa)
+ Weather Condition
+
+> Note: File path attached to this Repository
+
+ 🛠️ Tools & Libraries
+ Python 3.x
+ pandas
+
+
+
+
+
+
+ 🔍 Key Explorations
+The analysis covers:
+•	Viewing dataset structure: `.head()`, `.shape`, `.columns`, `.dtypes`
+•	Understanding data distributions with `.value_counts()` and `.unique()`
+•	Detecting missing values using `.isnull()` and `.notnull()`
+•	Statistical summaries: `.mean()`, `.median()`, `.mode()`, `.std()`, `.var()`
+•	Conditional filtering: querying weather conditions (e.g., 'Clear', 'Snow', 'Fog')
+•	Group-based analysis: `.groupby()` with `.min()`, `.max()`, `.sum()`
+•	Multi-condition filtering using logical operators
+
+ 📈 Sample Insights
+•	Days with `Clear` weather or specific wind speeds (e.g., 4 km/h)
+•	Days with visibility exactly at 25 km
+•	Records where wind speed > 24 km/h and visibility == 25 km
+•	Group statistics by weather condition
+•	Weather conditions involving 'Snow' using string matching
+•	Days with visibility > 40 km or humidity > 50% during clear weather
+
+CODE :
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -357,6 +404,8 @@ data[(data['Weather Condition'] == 'Clear') & (data['Rel Hum_%'] > 50)|(data['Vi
 
 
 # In[ ]:
+
+
 
 
 
