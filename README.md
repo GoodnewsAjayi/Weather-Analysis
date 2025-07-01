@@ -23,7 +23,6 @@ It includes features such as:
  pandas
 
 
-
  🔍 Key Explorations
 The analysis covers:
 •	Viewing dataset structure: `.head()`, `.shape`, `.columns`, `.dtypes`
